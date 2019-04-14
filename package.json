@@ -1,0 +1,13 @@
+{
+  "name": "number-to-english-words",
+  "description": "Convert number to English Words",
+  "version": "1.0.0",
+  "main": "src",
+  "author": "Lorenzo Balsano (https://github.com/SoulDever)",
+  "private": true,
+  "scripts": {
+    "client:install": "cd app && npm install",
+    "gui:start": "cd app && node ssr-server.js",
+    "test:server": "cd test && npm install && npm run build && npm run test:server"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "app.name": "Number to English Words",
+  "footer.credits": "SoulDever © 2019",
+  "search.title": "Enter a number<br>Get its name!",
+  "search.placeholder": "Enter a number",
+  "search.button": "Get the name",
+  "error.page.notFound": "Page not found"
+}

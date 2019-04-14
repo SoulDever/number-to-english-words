@@ -1,0 +1,39 @@
+{
+  "name": "number-to-english-words-server",
+  "description": "Convert number to English Words",
+  "version": "1.0.0",
+  "main": "src",
+  "author": "Lorenzo Balsano (https://github.com/SoulDever)",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "eslint": "^5.16.0",
+    "fancy-log": "1.3.2",
+    "gulp": "4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "2.6.1",
+    "gulp-rename": "1.4.0",
+    "gulp-replace": "1.0.0",
+    "gulp-uglify": "3.0.1",
+    "gulp-wrap": "^0.15.0",
+    "http-server": "0.11.1",
+    "jasmine": "3.2.0",
+    "phantomjs-prebuilt": "2.1.16",
+    "uglify-save-license": "0.4.1"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "test:server": "http-server -p 4205 -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SoulDever"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/SoulDever",
+  "keywords": [
+    "number",
+    "tool",
+    "word"
+  ]
+}

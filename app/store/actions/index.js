@@ -1,0 +1,3 @@
+export {
+	fetchWords
+} from './word';

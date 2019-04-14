@@ -1,0 +1,29 @@
+/*!
+ * Number-To-English-Words util
+ * @version v<%= data.version %>
+ * @link <%= data.homepage %>
+ * @author <%= data.author %>
+ */
+(function () {
+    'use strict';
+
+    var root = typeof self == 'object' && self.self === self && self ||
+        typeof global == 'object' && global.global === global && global ||
+        this;
+
+    <%= data.contents %>
+
+    var numberToEnglishWords = {
+        toEnglishWords: toEnglishWords,
+    };
+
+    if (typeof exports != 'undefined') {
+        if (typeof module != 'undefined' && module.exports) {
+            exports = module.exports = numberToEnglishWords;
+        }
+        exports.numberToEnglishWords = numberToEnglishWords;
+    } else {
+        root.numberToEnglishWords = numberToEnglishWords;
+    }
+
+}());

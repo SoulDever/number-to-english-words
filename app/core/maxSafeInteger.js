@@ -1,0 +1,3 @@
+const MAX_SAFE_INTEGER = 2000000000000000;
+
+module.exports = MAX_SAFE_INTEGER;
