@@ -14,7 +14,7 @@ routing capabilities.
 ## Using Docker
 
 - Clone this repository
-- Set/check `environment` inside Docker-compose.yml (Default PORT for APP is 3000)
+- Set/check `environment` inside Docker-compose.yml (Default PORT for APP is 4204)
 - Run `docker-compose up`
 
 ## TESTING (Fast Way - It will install all dependencies automatically)
@@ -30,4 +30,4 @@ routing capabilities.
 
 ## Other
 
-- In this phase node/express entry file is `app/ssr-server.js`
+- Node/Express entry file is `app/ssr-server.js`

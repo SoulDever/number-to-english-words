@@ -57,7 +57,7 @@ if (!dev && cluster.isMaster) {
 			server.get('/', (req, res) => {
 				const actualPage = '/';
 				nextApp.render(req, res, actualPage)
-			})
+			});
 
 			// Default catch-all renders Next app
 			server.get('*', (req, res) => {
