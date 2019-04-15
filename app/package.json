@@ -35,7 +35,7 @@
   "scripts": {
     "dev": "node ssr-server.js",
     "build": "rm -rf .next && next build",
-    "start": "NODE_ENV=production node ssr-server.js",
+    "start": "next start -p $PORT",
     "lint": "standard"
   }
 }

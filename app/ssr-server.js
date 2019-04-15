@@ -38,6 +38,9 @@ if (!dev && cluster.isMaster) {
 
 			const server = express();
 
+			// APIs / Routes
+			require('./route/numberToEnglishWords.route.js')(server);
+
 			// Static files
 			// https://github.com/zeit/next.js/tree/4.2.3#user-content-static-file-serving-eg-images
 			server.use('/static', express.static(path.join(__dirname, 'static'), {
@@ -50,9 +53,6 @@ if (!dev && cluster.isMaster) {
 				res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 				next();
 			});
-
-			// APIs / Routes
-			require('./route/numberToEnglishWords.route.js')(server);
 
 			server.get('/', (req, res) => {
 				const actualPage = '/';

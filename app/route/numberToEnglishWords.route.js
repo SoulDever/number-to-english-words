@@ -1,8 +1,8 @@
 const { isSafeNumber, toEnglishWords } = require('../core');
 
-module.exports = (app) => {
+module.exports = async (app) => {
 	// Get the name of the number
-  app.get('/api/numberToEnglishWords/:number', (req, res) => {
+  await app.get('/api/numberToEnglishWords/:number', (req, res) => {
   	let model;
 
   	if(isSafeNumber(+req.params.number)) {
@@ -19,4 +19,4 @@ module.exports = (app) => {
 
     return res.send(model);
   });
-}
+};
